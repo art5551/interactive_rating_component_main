@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --font-body: 'Overpass', sans-serif;
+  --font-size: 15px;
+}
+
+/* Beginning of reset CSS with minor changes recommended by Kevin Powell */
+/* see youtube https://www.youtube.com/watch?v=h3bTwCqX4ns */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] { 
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Deviation from KPowell*/
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End of reset CSS*/
+
+
+/* Attribution is for the FEM footer */
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+ /* setting the initial content attributes here */
+ /* start initial design with mobile design first */
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background-color: var(--very-dark-blue);
+}
+
+section {
+  background-color: var(--dark-blue);
+  min-width: 350px;
+  max-width: 350px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: var(--light-grey);
+}
+
+.plan-details {
+  padding: 10px;
+  margin: 30px;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 75px;
+ 
+  background-color: var(--very_pale_blue);
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.aplan p {
+  color: var(--desaturated_blue);
+}
+
+.change {
+  font-size: 12px;
+}
+
+
+.submit-button {
+  display: flex;
+}
+
+
+.submit-btn {
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
+  color: white;
+  font-size: 12px;
+  padding: 0.5em 1em;
+  margin: auto;
+  border-radius: .5em;
+  background: var(--Orange);
+  cursor: pointer;
+  border: none;
+  /* horizontal vertical blur start blur  */
+  text-decoration: none;
+}
+
+
+.submit-btn:hover {
+  background: var(--white);
+  color: var(--Orange);
+}
+
+
+
