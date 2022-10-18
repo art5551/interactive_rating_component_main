@@ -10,41 +10,72 @@
 </head>
 <body>
   <main>
-    <section class="rate-window">
+    <section class="rate-window" style="display: none;">
 
       <!-- Rating state start -->
       <div class="star-icon">
         <img class="icon" src="images/icon-star.svg" alt="" aria-hidden="true" />
       </div>
       <div class="heading">
-        How did we do?
+        <h2>How did we do?</h2>
       </div>
       <p class="text">
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
       </p>
-
-
       <div class="ratings">
-        1 2 3 4 5
-      </div>
-      
-      <div class="submit-button">
-        <button class="submit-btn" type="button">Submit</button>
-      </div>
-      
+          <label class="custom-radio-btn">
+            <input type="radio" name="rating">
+            <span class="checkmark"></span>
+            <span class="number">1</span>            
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" name="rating">
+            <span class="checkmark"></span>
+            <span class="number">2</span>
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" name="rating">
+            <span class="checkmark"></span>
+            <span class="number">3</span>
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" name="rating">
+            <span class="checkmark"></span>
+            <span class="number">4</span>
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" name="rating">
+            <span class="checkmark"></span>
+            <span class="number">5</span>
+          </label>
+        </div>
+        <div class="submit-button">
+          <button class="submit-btn" type="button">SUBMIT</button>
+        </div>
+  
 
       <!-- Rating state end -->
     </section>
-    <section class="results-window" style="display: none;">
+    <section class="results-window">
       <!-- Thank you state start -->
+      <div class="thank-you">
+        <img class="icon" src="images/illustration-thank-you.svg" alt="" aria-hidden="true" />
+      </div>  
 
-      You selected <!-- Add rating here --> out of 5
+      <div class="results-pill">
+        <p>You selected<span id="result">1</span>out of 5</p>
+      </div>
+      
 
-      Thank you!
-
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
+      <div class="heading">
+        <h2>Thank you!</h2>
+      </div>
+      <div class="result-text">
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+      </div>
+      
 
       <!-- Thank you state end -->
     </section>
@@ -55,12 +86,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </main>
-
-
-
-
-
-  
 
 </body>
 </html>

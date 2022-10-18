@@ -104,14 +104,14 @@ svg {
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-body);
-  background-color: var(--very-dark-blue);
+  background-color: black;
 }
 
-section {
-  background-color: var(--dark-blue);
-  min-width: 350px;
-  max-width: 350px;
-  padding: 20px;
+.rate-window {
+  background-color: var(--very-dark-blue);
+  min-width: 300px;
+  max-width: 300px;
+  padding: 30px;
   margin: 15px;
   border-radius: 15px 15px 15px 15px;
 }
@@ -130,58 +130,83 @@ section {
   color: var(--light-grey);
 }
 
-.plan-details {
-  padding: 10px;
-  margin: 30px;
-}
-
-.plan-details {
+.ratings {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-
-  margin-top: 10px;
-  border-radius: 10px;
-  height: 75px;
- 
-  background-color: var(--very_pale_blue);
+  justify-content: space-around;
 }
 
-h2 {
-  font-weight: 900;
+.custom-radio-btn {
+  background-color: var(--dark-blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.aplan p {
-  color: var(--desaturated_blue);
+.custom-radio-btn:hover {
+  cursor: pointer;
+  background-color: var(--Orange);
 }
 
-.change {
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn .number{
+  position: absolute;
+  color: var(--light-grey);
+}
+
+.custom-radio-btn .checkmark {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--light-grey);
   font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+
+.custom-radio-btn input:checked + .checkmark {
+  opacity: 1;
+}
+
+
+.custom-radio-btn input:checked + .checkmark + .number {
+  opacity: 1;
+  color: var(--white);
+}
+
+.custom-radio-btn input:hover {
+  background-color: var(--Orange);
+}
+.custom-radio-btn .checkmark:hover + .number {
+  color: white;
+}
+
 
 
 .submit-button {
   display: flex;
-}
-
-
-.submit-btn {
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 90%;
+  margin-top: 25px;
+}
+
+.submit-btn {
+  width: 100%;
   color: white;
-  font-size: 12px;
-  padding: 0.5em 1em;
-  margin: auto;
-  border-radius: .5em;
+  font-size: 14px;
+  padding: 0.5em 0.5em;
+  border-radius: 2em;
   background: var(--Orange);
   cursor: pointer;
   border: none;
-  /* horizontal vertical blur start blur  */
-  text-decoration: none;
 }
 
 
@@ -190,5 +215,42 @@ h2 {
   color: var(--Orange);
 }
 
+.results-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+  min-width: 300px;
+  max-width: 325px;
+  padding: 25px;
+  border-radius: 15px 15px 15px 15px;
+}
+.thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.result-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: var(--light-grey);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
+}
+
+.results-pill {
+  width: 70%;
+  margin-top: 25px;
+  color: var(--Orange);
+  font-size: 12px;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-radius: 2em;
+  background: var(--dark-blue);
+  border: none;
+}
