@@ -87,11 +87,11 @@ svg {
 
 /* Attribution is for the FEM footer */
 .attribution {
-  font-size: 11px; 
+  font-size: .6875rem; 
   text-align: center; 
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: #fff; 
 }
 
 
@@ -111,8 +111,8 @@ svg {
   background-color: var(--very-dark-blue);
   min-width: 300px;
   max-width: 300px;
-  padding: 30px;
-  margin: 15px;
+  padding: 2rem;
+  margin: 1rem;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -235,8 +235,8 @@ svg {
   background-color: var(--very-dark-blue);
   min-width: 300px;
   max-width: 300px;
-  padding: 30px;
-  margin: 15px;
+  padding: 2rem;
+  margin: 1rem;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -251,13 +251,6 @@ svg {
   border-radius: 2em;
   background: var(--dark-blue);
   border: none;
-}
-
-.heading-2 {
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--white);
-  margin-top: 20px;
 }
 
 .result-text {
