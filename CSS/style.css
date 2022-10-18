@@ -109,11 +109,11 @@ svg {
 
 #rate-window {
   background-color: var(--very-dark-blue);
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 18.75rem;
+  max-width: 18.75rem;
   padding: 2rem;
   margin: 1rem;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: .9rem .9rem .9rem .9rem;
 }
 
 .star-icon {
@@ -130,15 +130,15 @@ svg {
 
 .heading {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--white);
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .text {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 12px;
+  margin-top: .625rem;
+  margin-bottom: 1.875rem;
+  font-size: .75rem;
   color: var(--light-grey);
 }
 
@@ -207,13 +207,13 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 
 #submit-btn {
   width: 100%;
   color: white;
-  font-size: 14px;
+  font-size: .875rem;
   padding: 0.5em 0.5em;
   border-radius: 2em;
   background: var(--Orange);
@@ -233,19 +233,19 @@ svg {
   justify-content: center;
   flex-direction: column;
   background-color: var(--very-dark-blue);
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 18.75rem;
+  max-width: 18.75rem;
   padding: 2rem;
   margin: 1rem;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: .9rem .9rem .9rem .9rem;
 }
 
 .results-pill {
   font-weight: 700;
   width: 70%;
-  margin-top: 25px;
+  margin-top: 1.56rem;
   color: var(--Orange);
-  font-size: 12px;
+  font-size: .75rem;
   text-align: center;
   padding: 0.5em 0.5em;
   border-radius: 2em;
@@ -255,8 +255,8 @@ svg {
 
 .result-text {
   text-align: center;
-  margin-top: 10px;
-  font-size: 12px;
+  margin-top: .625rem;
+  font-size: .75rem;
   color: var(--light-grey);
 
 }
