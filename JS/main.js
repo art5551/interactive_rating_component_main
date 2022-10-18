@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Show rate window and hide results window
   document.querySelector('#results-window').style.display = 'none';
-  document.querySelector('#rate-window').style.display = 'block';
+  document.querySelector('#rate-window').style.display = '';
   // Add listener to SUBMIT button
   document.querySelector('#submit-btn').addEventListener('click', () => rate_me());
 
@@ -20,7 +20,7 @@ function rate_me() {
 
   // This function is finished and works.
   // Show compose view and hide other views
-  document.querySelector('#results-window').style.display = 'block';
+  document.querySelector('#results-window').style.display = '';
   // New div added to view an email
   document.querySelector('#rate-window').style.display = 'none';
 
