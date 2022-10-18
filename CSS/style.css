@@ -107,7 +107,7 @@ svg {
   background-color: black;
 }
 
-.rate-window {
+#rate-window {
   background-color: var(--very-dark-blue);
   min-width: 300px;
   max-width: 300px;
@@ -215,7 +215,7 @@ svg {
   color: var(--Orange);
 }
 
-.results-window {
+#results-window {
   display: flex;
   flex-direction: column;
   align-items: center;
